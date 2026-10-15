@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Drift</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div id="game-shell">
+        <div id="hud">
+            <div class="hud-item">
+                <span class="label">Score</span>
+                <span id="score">0</span>
+            </div>
+            <div class="hud-item">
+                <span class="label">Lives</span>
+                <span id="lives">3</span>
+            </div>
+            <div class="hud-item">
+                <span class="label">Level</span>
+                <span id="level">1</span>
+            </div>
+        </div>
+
+        <div id="game-container">
+            <canvas id="gameCanvas" width="960" height="600"></canvas>
+
+            <div id="game-overlay">
+                <div class="overlay-card">
+                    <p class="eyebrow">Mission Control</p>
+                    <h1 id="overlayTitle">Star Drift</h1>
+                    <p id="overlayDescription">Collect energy cells, dodge debris, and stay alive as the asteroid field intensifies.</p>
+                    <button id="startBtn" type="button">Launch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/game.js"></script>
+</body>
+
+</html>
